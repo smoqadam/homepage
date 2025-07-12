@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saeed Moghadamzadeh - Personal homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .link {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .link:hover {
+            color: #005a9e;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #222;
+        }
+
+        .projects {
+            list-style: none;
+        }
+
+        .projects li {
+            margin-bottom: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .projects li:last-child {
+            border-bottom: none;
+        }
+
+        .project-name {
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .project-name:hover {
+            color: #007acc;
+        }
+
+        .project-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+
+        .project-description pre {
+            display: inline;
+            background-color: #f5f5f5;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        .project-description a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .project-description a:hover {
+            color: #005a9e;
+            text-decoration: underline;
+        }
+
+        .project-description pre {
+            display: inline;
+            background-color: #f5f5f5;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+
+            .links {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saeed Moghadamzadeh</h1>
+        <p class="bio">I like to explore ideas and build fun, useful things—just to see what's possible.</p>
+        
+        <nav class="links">
+            <a href="https://blog.saeedm.com" class="link">Blog</a>
+            <a href="https://github.com/smoqadam" class="link">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <ul class="projects">
+                <li>
+                    <a href="https://github.com/smoqadam/pvm" class="project-name">PVM - PHP version management</a>
+                    <p class="project-description">A bash script to manage PHP version on your machine, inspired by NVM</p>
+                </li>
+                <li>
+                    <a href="https://github.com/smoqadam/gb" class="project-name">Gb</a>
+                    <p class="project-description">Inspired by <a href="https://httpd.apache.org/docs/current/programs/ab.html" style="display: inline;">ab</a> (Apache Benchmark) for stress testing</p>
+                </li>
+                <li>
+                    <a href="https://doodling.saeedm.com/" class="project-name">Doodling with code</a>
+                    <p class="project-description">a series of projects I did to learn Math and p5js</p>
+                </li>
+
+                <li>
+                    <a href="https://github.com/smoqadam/git-pocket/" class="project-name">Git Pocket</a>
+                    <p class="project-description">A read it later app that uses Github as a backend (using github action and pages). I wrote about it <a href="#">here</a></p>
+                </li>
+                <li>
+                    <a href="#" class="project-name">My other open source projects</a>
+                    <p class="project-description">Check out my GitHub</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
